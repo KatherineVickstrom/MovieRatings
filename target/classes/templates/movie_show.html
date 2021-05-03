@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+    <title>Movie Rating</title>
+</head>
+<body>
+   <h2 th:inline="text">[[${movie.name}]]'s Rating of [[${movie.title}]]</h2>
+   
+   Name: <span th:inline="text"> [[${movie.name}]] </span> <br />
+   Title: <span th:inline="text"> [[${movie.title}]] </span> <br /> 
+   Rating: <span th:inline="text"> [[${movie.rating}]] </span> <br />
+   Date: <span th:inline="text"> [[${movie.date}]] </span> <br />
+   <a href="/movie">Movie Ratings</a>
+</body>
+</html>
